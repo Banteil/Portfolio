@@ -1,0 +1,26 @@
+using UnityEngine;
+
+namespace Zeus
+{
+#if UNITY_EDITOR
+    [FSMHelpbox("This is a #SCRIPTNAME# decision", UnityEditor.MessageType.Info)]
+#endif
+    public class #SCRIPTNAME# : StateDecision
+    {
+		public override string CategoryName
+        {
+            get { return "MyCustomDecisions/"; }
+        }
+
+        public override string DefaultName
+        {
+            get { return "#SCRIPTNAME#"; }
+        }
+
+        public override bool Decide(IFSMBehaviourController fsmBehaviour)
+        {
+            //TO DO
+            return true;
+        }
+    }
+}

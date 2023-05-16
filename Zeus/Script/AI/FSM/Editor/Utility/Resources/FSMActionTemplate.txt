@@ -1,0 +1,24 @@
+using UnityEngine;
+
+namespace Zeus
+{
+#if UNITY_EDITOR
+    [FSMHelpbox("This is a #SCRIPTNAME# Action", UnityEditor.MessageType.Info)]
+#endif
+    public class #SCRIPTNAME# : StateAction
+    {       
+       public override string CategoryName
+        {
+            get { return "MyCustomActions/"; }
+        }
+        public override string DefaultName
+        {
+            get { return "#SCRIPTNAME#"; }
+        }
+
+        public override void DoAction(IFSMBehaviourController fsmBehaviour, FSMComponentExecutionType executionType = FSMComponentExecutionType.OnStateUpdate)
+        {
+            //TO DO
+        }
+    }
+}

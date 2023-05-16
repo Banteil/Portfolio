@@ -1,0 +1,25 @@
+using UnityEngine;
+
+namespace Zeus
+{
+    public abstract class #SCRIPTNAME# : FSMState
+    {       
+        public override void OnStateEnter(IFSMBehaviourController fsmBehaviour)
+        {
+            base.OnStateEnter(fsmBehaviour);
+			//TODO
+        }
+
+        public override void OnStateExit(IFSMBehaviourController fsmBehaviour)
+        {
+			//TODO
+            base.OnStateExit(fsmBehaviour);
+        }
+
+        public override void UpdateState(IFSMBehaviourController fsmBehaviour)
+        {      
+			//TODO
+            base.UpdateState(fsmBehaviour);
+        }
+    }
+}
